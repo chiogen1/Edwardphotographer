@@ -9,10 +9,12 @@
 			* {
 					font-family: "微軟正黑體"; }
 			header {
-				font-size: 36px;
-				color: rgb(15, 228, 228);
-			}	 
+				font-size: 30px;
+				color: rgb(15, 228, 228); }	 
 	</style>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 </head>
 <body>
@@ -24,7 +26,7 @@
 	    </ul>
 	</nav>
 
-	<main>
+	<main class="container-fluid bg-dark text-white text-light">
 
 		<nav>
 			<h2><a href="https://www.instagram.com/edward_photographer/">我的攝影帳ig網址 </a></h2>
@@ -34,7 +36,9 @@
 		<img src="DSC_2564.JPG" height="250" alt="照片">
 		<br><br>
 
-		<session  id="about photo">
+		<div class="row">
+
+		<session  id="about photo" class="col-lg-4">
 			<header>關於我的攝影史</header>
 			<h3>國一開始接觸單眼相機</h3>
 			<h3>高一加入攝影社</h3>
@@ -43,17 +47,19 @@
 			<h3>大二擔任攝影社器材部長</h3>
 		</session>
 
-		<article id="think"> 
+		<article id="think" class="col-lg-4"> 
 			<header>攝影理念</header>
 			<h3>攝影無對錯</h3>
 			<h3>拍得高興就好</h3>
 			<h3>重點是找出自己獨特的風格</h3>
 		</article>
 
-		<aside id="youtube"> 
+		<aside id="youtube" class="col-lg-4"> 
 			<header>我的作品影集</header>
 			<iframe width="640" height="360" src="https://www.youtube.com/embed/NRDrVDQZnXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</aside>
+
+		</div> 
 
 		<footer>
 			Copyright ©益嘉的個人網站. All Rights Reserved.
