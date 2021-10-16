@@ -21,6 +21,26 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+	<script>
+		$(document).ready(function(){
+			$("#myphoto").hover(function(){
+				$("#PICTURE").attr("src","edig.png");
+			});
+	
+			$("#myig").hover(function(){
+				$("#PICTURE").attr("src","yiig.png");
+			});
+
+			$("#PICTURE").hover(function(){
+				$("#PICTURE").attr("src","DSC_2564.JPG");
+			});
+			
+			$("#PICTURE").click(function(){
+				$("#PICTURE").hide();
+				$("#PICTURE").fadeIn("slow")
+			});
+		});
+	</script>
 </head>
 
 <style>body{background-color: rgb(158, 202, 185);}</style>
@@ -46,13 +66,13 @@
 
 		<nav>
 			<h4><a href="https://www.instagram.com/edward_photographer/"
-				class="text-reset text-decoration-none text-white bg-primary">我的攝影帳ig網址 </a></h4>
+				class="text-reset text-decoration-none text-white bg-primary" target="_blank" id="myphoto">我的攝影帳ig網址 </a></h4>
 			<h4><a href="https://www.instagram.com/yi_chia_photography/"
-				class="text-reset text-decoration-none text-white bg-primary">我的圖文帳ig網址 </a></h4>
+				class="text-reset text-decoration-none text-white bg-primary" id="myig">我的圖文帳ig網址 </a></h4>
 		</nav>
 
 		<img src="DSC_2564.JPG" height="250" weight="748" alt="照片" 
-		     class="img-responsive rounded" >
+		     class="img-responsive rounded" id="PICTURE">
 		<br><br>
 
 		<div class="row">
